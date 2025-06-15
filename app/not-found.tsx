@@ -33,8 +33,3 @@ export default function NotFound() {
     </div>
   )
 }
-
-export const metadata = {
-  title: '404 - Page Not Found | Thai Orchid',
-  description: 'The page you are looking for could not be found.',
-}
