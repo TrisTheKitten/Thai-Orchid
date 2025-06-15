@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1",
+    "name": "Pad Thai",
+    "description": "Classic stir-fried rice noodles with shrimp, tofu, bean sprouts, and tamarind sauce",
+    "price": 525,
+    "image": "/pad thai.png",
+    "category": "Noodles",
+    "calories": 432
+  },
+  {
+    "id": "2",
+    "name": "Tom Yum Goong",
+    "description": "Spicy and sour soup with fresh shrimp, lemongrass, and lime leaves",
+    "price": 455,
+    "image": "/tom yum kung.png",
+    "category": "Soups",
+    "calories": 185
+  },
+  {
+    "id": "3",
+    "name": "Green Curry Chicken",
+    "description": "Aromatic green curry with tender chicken, Thai basil, and coconut milk",
+    "price": 595,
+    "image": "/Green Curry.png",
+    "category": "Curries",
+    "calories": 520
+  },
+  {
+    "id": "4",
+    "name": "Khao Pad (Fried Rice)",
+    "description": "Fragrant jasmine rice stir-fried with vegetables, egg, and your choice of protein",
+    "price": 490,
+    "image": "/Khao Pad (Fried Rice).png",
+    "category": "Rice",
+    "calories": 385
+  },
+  {
+    "id": "5",
+    "name": "Som Tam (Papaya Salad)",
+    "description": "Fresh papaya salad with tomatoes, green beans, and spicy lime dressing",
+    "price": 350,
+    "image": "/Som Tum (Papaya Salad).png",
+    "category": "Salads",
+    "calories": 120
+  },
+  {
+    "id": "6",
+    "name": "Mango Sticky Rice",
+    "description": "Sweet sticky rice topped with fresh mango slices and coconut cream",
+    "price": 315,
+    "image": "/Mango Sticky Rice.png",
+    "category": "Desserts",
+    "calories": 295
+  },
+  {
+    "id": "7",
+    "name": "Massaman Curry",
+    "description": "Rich and mild curry with beef, potatoes, and roasted peanuts",
+    "price": 665,
+    "calories": 485,
+    "image": "/Massaman Curry.png",
+    "category": "Curries"
+  },
+  {
+    "id": "8",
+    "name": "Pad Krapow Moo Saap",
+    "description": "Spicy stir-fried minced pork with Thai basil served over rice with fried egg",
+    "price": 490,
+    "image": "/Pad Krapow Moo Saap.png",
+    "category": "Rice",
+    "calories": 410
+  },
+  {
+    "id": "9",
+    "name": "Coconut Ice Cream",
+    "description": "Creamy coconut ice cream served with toasted coconut flakes and peanuts",
+    "price": 245,
+    "image": "/Coconut Ice Cream.png",
+    "category": "Desserts",
+    "calories": 180
+  },
+  {
+    "id": "10",
+    "name": "Pad See Ew",
+    "description": "Wide rice noodles stir-fried with dark soy sauce, Chinese broccoli, and egg",
+    "price": 525,
+    "image": "/Pad See Ew.png",
+    "category": "Noodles",
+    "calories": 445
+  },
+  {
+    "id": "11",
+    "name": "Tom Kha Gai",
+    "description": "Creamy coconut chicken soup with galangal, lime leaves, and mushrooms",
+    "price": 425,
+    "image": "/Tom Kha Gai.png",
+    "category": "Soups",
+    "calories": 220
+  }
+]
