@@ -106,11 +106,11 @@ export default function Home() {
   )
 
   return (
-    <div className="relative isolate min-h-screen bg-gradient-to-br from-warmWhite via-softCream-100 to-warmOrange-50 text-charcoal-800">
-      <div className="pointer-events-none fixed inset-0 -z-10" aria-hidden>
-        <div className="pointer-events-none absolute -left-[15%] -top-[40%] h-[70%] w-[50%] rounded-full bg-gradient-to-br from-warmOrange-200/25 to-sunshineYellow-300/20" />
-        <div className="pointer-events-none absolute left-[70%] top-[50%] h-[50%] w-[35%] rounded-full bg-gradient-to-br from-berryRed-200/15 to-berryRed-300/15" />
-        <div className="pointer-events-none absolute -bottom-[40%] -right-[15%] h-[70%] w-[50%] rounded-full bg-gradient-to-br from-deepAmber-200/20 to-warmOrange-300/20 motion-safe:animate-float" />
+    <div className="relative isolate min-h-screen overflow-x-clip bg-gradient-to-br from-warmWhite via-softCream-100 to-warmOrange-50 text-charcoal-800">
+      <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden>
+        <div className="pointer-events-none absolute -left-[20%] -top-[30%] h-[55%] w-[70%] rounded-full bg-gradient-to-br from-warmOrange-200/25 to-sunshineYellow-300/20 sm:-left-[15%] sm:-top-[40%] sm:h-[70%] sm:w-[50%]" />
+        <div className="pointer-events-none absolute left-[55%] top-[45%] h-[40%] w-[45%] rounded-full bg-gradient-to-br from-berryRed-200/15 to-berryRed-300/15 sm:left-[70%] sm:top-[50%] sm:h-[50%] sm:w-[35%]" />
+        <div className="pointer-events-none absolute -bottom-[30%] -right-[20%] h-[55%] w-[70%] rounded-full bg-gradient-to-br from-deepAmber-200/20 to-warmOrange-300/20 motion-safe:animate-float sm:-bottom-[40%] sm:-right-[15%] sm:h-[70%] sm:w-[50%]" />
       </div>
 
       <div className="relative z-10">
@@ -118,7 +118,7 @@ export default function Home() {
 
         <HeroSection />
 
-        <main className="container mx-auto px-4 pb-20">
+        <main className="container mx-auto pb-16 sm:pb-20">
         <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
           <SearchBar
             searchQuery={searchQuery}
@@ -128,12 +128,12 @@ export default function Home() {
           />
         </div>
 
-        <section id="menu" className="mt-8 px-4 sm:mt-12">
-          <div className="mb-8 text-center sm:mb-12">
-            <h2 className="mb-4 font-display text-3xl font-bold bg-gradient-to-r from-charcoal-700 to-charcoal-500 bg-clip-text text-transparent sm:text-4xl md:text-5xl">
+        <section id="menu" className="mt-6 sm:mt-12">
+          <div className="mb-6 text-center sm:mb-12">
+            <h2 className="mb-3 font-display text-2xl font-bold bg-gradient-to-r from-charcoal-700 to-charcoal-500 bg-clip-text text-transparent sm:mb-4 sm:text-3xl md:text-4xl lg:text-5xl">
               Our Menu
             </h2>
-            <p className="mx-auto max-w-2xl px-4 text-base text-charcoal-600 sm:text-lg">
+            <p className="mx-auto max-w-2xl text-sm text-charcoal-600 sm:text-base md:text-lg">
               Each dish is carefully crafted using authentic Thai ingredients and traditional
               cooking methods
             </p>

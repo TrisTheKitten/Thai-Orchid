@@ -34,13 +34,13 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ onCartIconClick, totalIte
   return (
     <>
       <nav
-        className="glass-blur animate-fade-in fixed left-0 right-0 top-0 z-50 border-b border-white/30 shadow-glass-lg"
+        className="glass-blur animate-fade-in safe-top fixed left-0 right-0 top-0 z-50 border-b border-white/30 shadow-glass-lg"
         role="navigation"
         aria-label="Main Navigation"
       >
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="flex items-center justify-between py-3 sm:py-4">
-            <h1 className="font-display text-2xl font-bold sm:text-3xl">
+        <div className="container mx-auto">
+          <div className="flex min-w-0 items-center justify-between gap-2 py-2.5 sm:py-4">
+            <h1 className="min-w-0 truncate font-display text-xl font-bold sm:text-2xl md:text-3xl">
               <span className="bg-gradient-to-r from-warmOrange-500 via-deepAmber-600 to-berryRed-600 bg-clip-text text-transparent">
                 Thai Orchid
               </span>
@@ -115,7 +115,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ onCartIconClick, totalIte
             />
 
           <motion.div
-            className="glass-blur pointer-events-auto absolute left-4 right-4 top-20 z-10 rounded-3xl border border-white/40 p-6 shadow-glass-lg"
+            className="glass-blur pointer-events-auto absolute left-3 right-3 top-[calc(4.25rem+env(safe-area-inset-top,0px))] z-10 max-h-[min(70vh,24rem)] overflow-y-auto rounded-2xl border border-white/40 p-4 shadow-glass-lg sm:left-4 sm:right-4 sm:rounded-3xl sm:p-6"
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}

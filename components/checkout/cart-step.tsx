@@ -104,7 +104,7 @@ export function CartStep({
         </div>
       </ScrollArea>
 
-      <div className="glass-blur mt-auto rounded-t-2xl border-t border-white/50 p-6 shadow-glass-lg">
+      <div className="glass-blur mt-auto rounded-t-2xl border-t border-white/50 p-4 shadow-glass-lg sm:p-6">
         <div className="mb-6 space-y-3">
           <div className="flex items-center justify-between text-sm">
             <span className="text-charcoal-600">Subtotal</span>

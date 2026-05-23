@@ -67,7 +67,7 @@ const MenuItemCard = memo(({ item, onAddToCart, index = 0 }: MenuItemCardProps) 
 
     <GlassCardBody className="space-y-5">
       <div className="space-y-3">
-        <h3 className="font-display text-xl tracking-tight text-charcoal-800 transition-colors duration-300 group-hover:text-warmOrange-700 sm:line-clamp-1 sm:text-2xl">
+        <h3 className="font-display text-lg tracking-tight text-charcoal-800 transition-colors duration-300 group-hover:text-warmOrange-700 sm:line-clamp-1 sm:text-xl md:text-2xl">
           {item.name}
         </h3>
         <p className="line-clamp-2 text-sm leading-relaxed text-charcoal-600">
@@ -148,7 +148,7 @@ export function MenuDisplay({ items, onAddToCart }: MenuDisplayProps) {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 xl:gap-10">
+    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8 xl:gap-10">
       {items.map((item, index) => (
         <div key={item.id} className="h-full">
           <MenuItemCard item={item} onAddToCart={onAddToCart} index={index} />

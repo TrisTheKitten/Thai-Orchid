@@ -107,7 +107,7 @@ const GlassCardBody = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn('flex flex-grow flex-col p-6 sm:p-7', className)}
+    className={cn('flex flex-grow flex-col p-4 sm:p-6 md:p-7', className)}
     {...props}
   />
 ))
@@ -119,7 +119,7 @@ const GlassCardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn('relative z-10 p-6 pt-0 sm:px-7 sm:pb-7', className)}
+    className={cn('relative z-10 p-4 pt-0 sm:p-6 sm:pt-0 md:px-7 md:pb-7', className)}
     {...props}
   />
 ))

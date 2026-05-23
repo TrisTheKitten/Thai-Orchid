@@ -130,24 +130,24 @@ export function CheckoutSidebar({
       />
       <motion.div
         key="sidebar"
-        className="fixed inset-y-0 right-0 z-50 flex w-full max-w-lg flex-col rounded-l-3xl border-l border-white/40 bg-gradient-to-br from-white/98 via-warmOrange-50/95 to-sunshineYellow-50/90 shadow-glass-xl md:backdrop-blur-md"
+        className="fixed inset-0 z-50 flex w-full flex-col bg-gradient-to-br from-white/98 via-warmOrange-50/95 to-sunshineYellow-50/90 shadow-glass-xl sm:inset-y-0 sm:left-auto sm:max-w-lg sm:rounded-l-3xl sm:border-l sm:border-white/40 md:backdrop-blur-md"
         style={{ willChange: "transform" }}
         initial={{ x: "100%" }}
         animate={{ x: 0 }}
         exit={{ x: "100%" }}
         transition={panelTransition}
       >
-      <div className="relative flex items-center justify-between border-b border-white/30 bg-gradient-to-r from-warmOrange-50/80 to-deepAmber-50/80 p-6">
-        <div className="flex items-center gap-4">
+      <div className="relative flex shrink-0 items-center justify-between gap-3 border-b border-white/30 bg-gradient-to-r from-warmOrange-50/80 to-deepAmber-50/80 px-4 pb-4 pt-[max(1rem,env(safe-area-inset-top))] sm:px-6 sm:pb-6 sm:pt-6">
+        <div className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4">
           <div
-            className="rounded-full bg-gradient-to-br from-warmOrange-500 to-deepAmber-600 p-3 text-white shadow-glass-sm"
+            className="shrink-0 rounded-full bg-gradient-to-br from-warmOrange-500 to-deepAmber-600 p-2.5 text-white shadow-glass-sm sm:p-3"
             aria-hidden
           >
-            <StepIcon className="h-5 w-5" />
+            <StepIcon className="h-4 w-4 sm:h-5 sm:w-5" />
           </div>
-          <div>
-            <h2 className="font-display text-2xl font-bold text-charcoal-800">{stepConfig.title}</h2>
-            <p className="text-sm text-charcoal-700">{subtitle}</p>
+          <div className="min-w-0">
+            <h2 className="truncate font-display text-lg font-bold text-charcoal-800 sm:text-2xl">{stepConfig.title}</h2>
+            <p className="truncate text-xs text-charcoal-700 sm:text-sm">{subtitle}</p>
           </div>
         </div>
         <Button
@@ -167,7 +167,7 @@ export function CheckoutSidebar({
         </div>
       </div>
 
-      <div className="flex flex-1 flex-col overflow-y-auto p-6">
+      <div className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain p-4 pb-[max(1rem,env(safe-area-inset-bottom))] sm:p-6">
         <AnimatePresence mode="wait" initial={false}>
           {checkoutStep === "cart" && (
             <motion.div

@@ -2,16 +2,16 @@ import { GlassCard, GlassCardBody } from '@/components/ui/glass-card'
 
 export function ContactSection() {
   return (
-    <section id="contact" className="mt-12 px-4 py-12 sm:mt-20 sm:py-16">
-      <div className="mb-8 text-center sm:mb-12">
-        <h2 className="mb-4 font-display text-3xl font-bold bg-gradient-to-r from-charcoal-700 to-charcoal-500 bg-clip-text text-transparent sm:text-4xl md:text-5xl">
+    <section id="contact" className="mt-10 py-10 sm:mt-20 sm:py-16">
+      <div className="mb-6 text-center sm:mb-12">
+        <h2 className="mb-3 font-display text-2xl font-bold bg-gradient-to-r from-charcoal-700 to-charcoal-500 bg-clip-text text-transparent sm:mb-4 sm:text-3xl md:text-4xl lg:text-5xl">
           Visit Us Today
         </h2>
-        <p className="mx-auto max-w-2xl px-4 text-base text-charcoal-600 sm:text-lg">
+        <p className="mx-auto max-w-2xl text-sm text-charcoal-600 sm:text-base md:text-lg">
           Come experience authentic Thai cuisine in a warm and welcoming atmosphere
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-8">
         <GlassCard variant="default">
           <GlassCardBody className="p-6 sm:p-7">
             <h3 className="mb-4 text-xl font-bold text-charcoal-800">Location</h3>
@@ -27,17 +27,17 @@ export function ContactSection() {
           <GlassCardBody className="p-6 sm:p-7">
             <h3 className="mb-4 text-xl font-bold text-charcoal-800">Hours</h3>
             <div className="space-y-2 text-charcoal-600">
-              <div className="flex justify-between gap-2">
+              <div className="flex flex-col gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-2">
                 <span>Monday - Thursday</span>
-                <span className="shrink-0 font-medium text-charcoal-700">11:00 AM - 9:00 PM</span>
+                <span className="font-medium text-charcoal-700 sm:shrink-0">11:00 AM - 9:00 PM</span>
               </div>
-              <div className="flex justify-between gap-2">
+              <div className="flex flex-col gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-2">
                 <span>Friday - Saturday</span>
-                <span className="shrink-0 font-medium text-charcoal-700">11:00 AM - 10:00 PM</span>
+                <span className="font-medium text-charcoal-700 sm:shrink-0">11:00 AM - 10:00 PM</span>
               </div>
-              <div className="flex justify-between gap-2">
+              <div className="flex flex-col gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-2">
                 <span>Sunday</span>
-                <span className="shrink-0 font-medium text-charcoal-700">12:00 PM - 8:00 PM</span>
+                <span className="font-medium text-charcoal-700 sm:shrink-0">12:00 PM - 8:00 PM</span>
               </div>
               <p className="pt-2 font-medium text-warmOrange-600">Closed on major holidays</p>
             </div>
@@ -72,7 +72,7 @@ export function ContactSection() {
         </GlassCard>
       </div>
       <div className="mt-8 text-center sm:mt-12">
-        <div className="rounded-2xl bg-gradient-to-r from-warmOrange-500 to-deepAmber-600 p-6 text-white sm:p-8">
+        <div className="rounded-2xl bg-gradient-to-r from-warmOrange-500 to-deepAmber-600 p-5 text-white sm:p-8">
           <h3 className="mb-4 text-xl font-bold sm:text-2xl">Ready to Order?</h3>
           <p className="mb-6 text-sm sm:text-base">
             Call us for takeout or delivery, or visit us for the full Thai Orchid experience!

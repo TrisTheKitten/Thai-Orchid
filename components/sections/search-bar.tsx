@@ -34,10 +34,10 @@ function SearchBar({
   }
 
   return (
-    <div className="mb-12">
-      <div className="relative mx-auto max-w-2xl px-4 sm:px-0">
+    <div className="mb-8 sm:mb-12">
+      <div className="relative mx-auto max-w-2xl">
         <div className="relative">
-          <div className="absolute left-6 top-1/2 z-10 -translate-y-1/2 sm:left-4">
+          <div className="absolute left-4 top-1/2 z-10 -translate-y-1/2">
             <Search
               className={cn(
                 'h-4 w-4 transition-colors duration-200 sm:h-5 sm:w-5',
@@ -62,7 +62,7 @@ function SearchBar({
               }
             }}
             className={cn(
-              'glass-blur w-full rounded-xl border-2 border-white/40 py-3 pl-12 pr-14 text-sm text-charcoal-800 shadow-glass-md transition-[border-color,box-shadow,background-color] duration-200 placeholder:text-charcoal-500 sm:rounded-2xl sm:py-4 sm:pr-12 sm:text-lg',
+              'glass-blur w-full min-w-0 rounded-xl border-2 border-white/40 py-3 pl-11 pr-12 text-base text-charcoal-800 shadow-glass-md transition-[border-color,box-shadow,background-color] duration-200 placeholder:text-charcoal-500 sm:rounded-2xl sm:py-4 sm:pl-12 sm:pr-12 sm:text-lg',
               isFocused &&
                 'border-warmOrange-400 bg-white/50 shadow-glass-hover ring-4 ring-warmOrange-200/50'
             )}
